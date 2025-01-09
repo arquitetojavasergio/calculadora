@@ -14,7 +14,7 @@ public class CalculadoraService {
 			input.setResultado(input.getNumero1() * input.getNumero2());
 			break;
 		case DIVIDIR:		
-			input.setResultado(input.getNumero1() - input.getNumero2());
+			input.setResultado(input.getNumero1() / input.getNumero2());
 			break;
 		default:
 			break;
