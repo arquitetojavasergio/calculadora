@@ -59,3 +59,11 @@ jobs:
             with:
               name: test-reports
               path: target/site/surefire-report.html
+
+    deploy:
+       name: Publicar o projeto na nuvem
+       runs-on: ubuntu-22.04
+       needs: test
+       steps:
+          - name: Checkout do código
+            uses: actions/checkout@v2
